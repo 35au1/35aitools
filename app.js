@@ -1,4 +1,4 @@
-// ── Translations ─────────────────────────────────────────────
+// ─ Translations ────────────────────────────────────────────
 
 const translations = {
   'prc-business': {
