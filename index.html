@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LAIT – Local AI Tools</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-inner">
+      <div class="logo">
+        <span class="logo-main">LAIT</span>
+      </div>
+      <nav>
+        <a href="#tools">Tools</a>
+        <a href="#purpose">Purpose</a>
+        <a href="#architecture">Architecture</a>
+      </nav>
+      <div class="lang-switch">
+        <button class="lang-btn active" data-lang="en">EN</button>
+        <span class="lang-divider">|</span>
+        <button class="lang-btn" data-lang="pl">PL</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <h1>Local AI Tools</h1>
+    </div>
+  </section>
+
+  <!-- APPS -->
+  <main class="apps" id="tools">
+
+    <!-- ── APP 1: PRC ── -->
+    <article class="app-card" id="prc">
+      <div class="app-header">
+        <div class="app-number">01</div>
+        <div>
+          <h2 class="app-title">PRC</h2>
+          <p class="app-subtitle">Product Research Calendar</p>
+        </div>
+      </div>
+      <p class="app-description">
+        A technical prompt instructs an LLM to browse the internet and identify a list of recently hyped products.
+        The LLM generates a summary report and provides an evaluation score per product.
+        The application works as a combined dashboard and calendar, giving you a structured, time-aware view of emerging trends.
+      </p>
+      <div class="app-badge-row">
+        <span class="app-badge">Web Search</span>
+      </div>
+
+      <ul class="section-list">
+        <li>
+          <button class="section-btn" data-modal="prc-business">Business problem addressed</button>
+        </li>
+        <li>
+          <button class="section-btn" data-modal="prc-why">Why this works?</button>
+        </li>
+        <li>
+          <button class="section-btn" data-modal="prc-llm">Usage of LLM</button>
+        </li>
+        <li>
+          <button class="section-btn" data-modal="prc-complex">Most complex features</button>
+        </li>
+        <li>
+          <button class="section-btn" data-modal="prc-extensions">Possible extensions</button>
+        </li>
+      </ul>
+    </article>
+
+    <!-- ── APP 2: TLAD ── -->
+    <article class="app-card" id="tlad">
+      <div class="app-header">
+        <div class="app-number">02</div>
+        <div>
+          <h2 class="app-title">TLAD</h2>
+          <p class="app-subtitle">Text to LLM to Application Diagram</p>
+        </div>
+      </div>
+      <p class="app-description">
+        The user defines a process in plain text. Through a technical prompt, the LLM builds an application diagram automatically.
+        The user can then describe changes in natural language and the LLM rebuilds the diagram accordingly.
+        Manual corrections to the diagram are supported, along with custom export options.
+      </p>
+      <div class="app-badge-row">
+        <span class="app-badge">UML</span>
+        <span class="app-badge">BPMN</span>
+      </div>
+
+      <ul class="section-list">
+        <li>
+          <button class="section-btn" data-modal="tlad-business">Business problem addressed</button>
+        </li>
+        <li>
+          <button class="section-btn" data-modal="tlad-why">Why this works?</button>
+        </li>
+        <li>
+          <button class="section-btn" data-modal="tlad-llm">Usage of LLM</button>
+        </li>
+        <li>
+          <button class="section-btn" data-modal="tlad-complex">Most complex features</button>
+        </li>
+        <li>
+          <button class="section-btn" data-modal="tlad-extensions">Possible extensions</button>
+        </li>
+      </ul>
+    </article>
+
+    <!-- ── APP 3: BDCP ── -->
+    <article class="app-card" id="bdcp">
+      <div class="app-header">
+        <div class="app-number">03</div>
+        <div>
+          <h2 class="app-title">BDCP</h2>
+          <p class="app-subtitle">Business Data Classificator and Predictor</p>
+        </div>
+      </div>
+      <p class="app-description">
+        The user prepares tabular data. The Linear Regression engine trains models based on multiple factor columns
+        (numerical and categorical) and result columns for classification. The LLM evaluates model quality and explains
+        the results in plain language. The user can test a prediction set, export an Excel formula, or export built code
+        ready for integration.
+      </p>
+      <div class="app-badge-row">
+        <span class="app-badge">Machine Learning</span>
+        <span class="app-badge">Linear Regression</span>
+        <span class="app-badge">Custom Weights</span>
+      </div>
+
+      <ul class="section-list">
+        <li>
+          <button class="section-btn" data-modal="bdcp-business">Business problem addressed</button>
+        </li>
+        <li>
+          <button class="section-btn" data-modal="bdcp-why">Why this works?</button>
+        </li>
+        <li>
+          <button class="section-btn" data-modal="bdcp-llm">Usage of LLM</button>
+        </li>
+        <li>
+          <button class="section-btn" data-modal="bdcp-complex">Most complex features</button>
+        </li>
+        <li>
+          <button class="section-btn" data-modal="bdcp-extensions">Possible extensions</button>
+        </li>
+      </ul>
+    </article>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+
+  <!-- PRINCIPLES SECTION -->
+  <section class="principles-section" id="purpose">
+    <div class="principles-inner">
+
+      <!-- Full-width purpose banner -->
+      <div class="principles-purpose">
+        <h2 class="principles-purpose-title">Experiment Tools Purpose</h2>
+        <p class="principles-purpose-text">
+          LAIT exists to test Generative AI capabilities and explore what it takes to build AI-powered solutions
+          across any environment. The applications probe current LLM behaviour around structuring and interpreting data,
+          while bringing practical awareness to the business process automations that are already within reach.
+        </p>
+      </div>
+
+      <h2 class="principles-heading" id="architecture">Architecture Principles</h2>
+      <div class="principles-grid">
+
+        <!-- Card 1: Local Deployment -->
+        <div class="principle-card">
+          <h3 class="principle-title">Local Deployment</h3>
+          <p class="principle-body">
+            The web browser acts as a secure, sandboxed environment — no general access to the application is exposed.
+            Users feed the interface with <strong>data only</strong>: paste from clipboard or load plain text.
+            Standard CORS policies and browser permission checks block any non-text operations by default,
+            keeping sensitive data entirely on the user's machine.
+          </p>
+        </div>
+
+        <!-- Card 2: Simple Architecture -->
+        <div class="principle-card">
+          <h3 class="principle-title">Simple Architecture</h3>
+          <p class="principle-body">
+            JS files act as pure calculation scripts — performing data transformations and complex math operations
+            with no third-party dependencies. The stack is intentionally minimal: no frameworks, no build pipelines,
+            no external libraries. This makes the application trivially deployable as a standalone external site
+            from any static host.
+          </p>
+        </div>
+
+        <!-- Card 3: Moveable to Azure -->
+        <div class="principle-card">
+          <h3 class="principle-title">Moveable to Azure</h3>
+          <p class="principle-body">
+            The same simplicity that enables local deployment also enables cloud migration — as an Azure Static Web App,
+            a Copilot Studio workflow, or an Azure AI Foundry workflow.
+            No complex database or backend relations means zero re-architecture: lift, configure, deploy.
+          </p>
+          <div class="principle-badge-row">
+            <span class="principle-badge">Azure Static Web App</span>
+            <span class="principle-badge">Copilot Studio</span>
+            <span class="principle-badge">Azure AI Foundry</span>
+          </div>
+        </div>
+
+        <!-- Card 4: Manual Exploration of Copilot -->
+        <div class="principle-card">
+          <h3 class="principle-title">Manual Exploration of Copilot</h3>
+          <p class="principle-body">
+            A workflow built on copying LLM-generated content directly into the application — no API keys,
+            no permission grants, no integrations required. Local text file loading means the entire flow
+            stays within the user's control, making it a frictionless way to explore Copilot and other LLMs
+            without any infrastructure setup.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>LAIT &mdash; Local AI Tools &copy; 2026</p>
+  </footer>
+
+  <!-- ═══════════════════════════════════════════
+       MODALS
+  ════════════════════════════════════════════ -->
+
+  <!-- PRC modals -->
+  <div class="modal-overlay" id="modal-prc-business" role="dialog" aria-modal="true" aria-labelledby="title-prc-business">
+    <div class="modal">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <h3 id="title-prc-business">PRC &mdash; Business problem addressed</h3>
+      <p>As a market researcher preparing reports on product changes, I need to manually gather product information using a browser. I need a solution that generates a list of products, evaluates their market situation based on standardised weights, and summarises the current market situation in a report. These activities take too much of my time.</p>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-prc-why" role="dialog" aria-modal="true" aria-labelledby="title-prc-why">
+    <div class="modal">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <h3 id="title-prc-why">PRC &mdash; Why this works?</h3>
+      <p>The LLM has the ability to browse news on the web targeted at the area indicated by the user.</p>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-prc-llm" role="dialog" aria-modal="true" aria-labelledby="title-prc-llm">
+    <div class="modal">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <h3 id="title-prc-llm">PRC &mdash; Usage of LLM</h3>
+      <p>The LLM searches the web according to the prompt instructions, evaluates information on the basis of the prompt criteria, and compiles a data summary together with a business report.</p>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-prc-complex" role="dialog" aria-modal="true" aria-labelledby="title-prc-complex">
+    <div class="modal">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <h3 id="title-prc-complex">PRC &mdash; Most complex features</h3>
+      <p>The LLM searches news according to the instructions and semantically evaluates information on a scale, then generates a business report.</p>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-prc-extensions" role="dialog" aria-modal="true" aria-labelledby="title-prc-extensions">
+    <div class="modal">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <h3 id="title-prc-extensions">PRC &mdash; Possible extensions</h3>
+      <p>Prompt configuration for topics other than products (e.g. legal changes), expanded dashboard and reporting capabilities (summary built from multiple source reports).</p>
+    </div>
+  </div>
+
+  <!-- TLAD modals -->
+  <div class="modal-overlay" id="modal-tlad-business" role="dialog" aria-modal="true" aria-labelledby="title-tlad-business">
+    <div class="modal">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <h3 id="title-tlad-business">TLAD &mdash; Business problem addressed</h3>
+      <p>As a business representative or analyst, I want to be able to define the functionalities of a business system. Based on a written description I want to understand and model a form solution with its lifecycle (low-code solutions), visualise the application scope, identify logical gaps, missing buttons, and unconsidered paths. I have a description of the solution and it is time-consuming to transform that description into the real shape of an application (stages, transition paths) and to visualise it.</p>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-tlad-why" role="dialog" aria-modal="true" aria-labelledby="title-tlad-why">
+    <div class="modal">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <h3 id="title-tlad-why">TLAD &mdash; Why this works?</h3>
+      <p>The LLM is able to process written text into the table structure of an application (elements, connections).</p>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-tlad-llm" role="dialog" aria-modal="true" aria-labelledby="title-tlad-llm">
+    <div class="modal">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <h3 id="title-tlad-llm">TLAD &mdash; Usage of LLM</h3>
+      <p>Based on the prompt and the user's input data, the LLM generates a technical table that is interpretable by the application.</p>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-tlad-complex" role="dialog" aria-modal="true" aria-labelledby="title-tlad-complex">
+    <div class="modal">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <h3 id="title-tlad-complex">TLAD &mdash; Most complex features</h3>
+      <p>The LLM semantically processes text and transforms it into standardised technical tables.</p>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-tlad-extensions" role="dialog" aria-modal="true" aria-labelledby="title-tlad-extensions">
+    <div class="modal">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <h3 id="title-tlad-extensions">TLAD &mdash; Possible extensions</h3>
+      <p>A section for defining form fields (identification based on descriptive data), a more advanced drawing configurator (currently basic functionality), and an application version strictly tailored to BPMN.</p>
+    </div>
+  </div>
+
+  <!-- BDCP modals -->
+  <div class="modal-overlay" id="modal-bdcp-business" role="dialog" aria-modal="true" aria-labelledby="title-bdcp-business">
+    <div class="modal">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <h3 id="title-bdcp-business">BDCP &mdash; Business problem addressed</h3>
+      <p>As a business data expert I hold data in the form of a table — source data and a result column representing historical records. I would like to build a business model, verify whether my assumptions are confirmed (relationships between data, understanding of data range min/max), and use that model/algorithm to predict new results. The application could guide me step by step on how to prepare the data and create such an algorithm, and catch potential errors in the algorithm design.</p>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-bdcp-why" role="dialog" aria-modal="true" aria-labelledby="title-bdcp-why">
+    <div class="modal">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <h3 id="title-bdcp-why">BDCP &mdash; Why this works?</h3>
+      <p>The application guides the user step by step on how to configure data for preparing the algorithm. The application measures the effectiveness of linear regression and highlights problems. The LLM report provides descriptive information about the strengths and weaknesses of the model.</p>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-bdcp-llm" role="dialog" aria-modal="true" aria-labelledby="title-bdcp-llm">
+    <div class="modal">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <h3 id="title-bdcp-llm">BDCP &mdash; Usage of LLM</h3>
+      <p>The LLM plays an additional supporting role in evaluating the quality of the algorithm (Linear Regression).</p>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-bdcp-complex" role="dialog" aria-modal="true" aria-labelledby="title-bdcp-complex">
+    <div class="modal">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <h3 id="title-bdcp-complex">BDCP &mdash; Most complex features</h3>
+      <p>An advanced algorithm configurator, analysis of algorithm/model quality, and prediction based on historical data.</p>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modal-bdcp-extensions" role="dialog" aria-modal="true" aria-labelledby="title-bdcp-extensions">
+    <div class="modal">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <h3 id="title-bdcp-extensions">BDCP &mdash; Possible extensions</h3>
+      <p>Extension to two-dimensional data (normal distribution), more versions of Linear Regression, and enrichment of data with new reports evaluating model quality.</p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
